@@ -19,6 +19,7 @@
         * [189. Rotated Array\(Not Finished\)](Leetcode Problems/Array and String/189. rotated_array.md)
         * [\(Yahoo\)217.Contains Duplicates](Leetcode Problems/Array and String/217. contains_duplicates.md)
         * [442. Find All Duplicates in an Array](Leetcode Problems/Array and String/442find_all_duplicates_in_an_array.md)
+        * [412. Fizz Buzz](412fizz-buzz.md)
     * [Tree](Tree.md)
         * [94. Binary Tree In-order Traversal](Leetcode Problems/Tree/94. binary_tree_in-order_traversal.md)
         * [\(Yahoo\)104. Maximum Depth of Binary Tree](Leetcode Problems/Tree/104. maximum_depth_of_binary_tree.md)
