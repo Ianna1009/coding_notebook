@@ -69,7 +69,7 @@
         * [198. House Robber](198house_robber.md)
         * [276. Paint Fence](276paint_fence.md)
         * [338. Counting Bits](338counting_bits.md)
-    * Bit Manipulation
+    * [Bit Manipulation](bit_manipulation.md)
         * [461.Hamming Distance](461hamming-distance.md)
 * [Design](design.md)
     * [\(Ya\/Go\)284. Peeking Iterator](284. peeking_iterator.md)
@@ -206,14 +206,14 @@
             * [475. Heaters](475heaters.md)
         * [Tree](tree_&_binary_search.md)
             * [298. Binary Tree Longest Consecutive Sequence](298binary_tree_longest_consecutive_sequence.md)
-            * DFS
+            * [DFS](tree_dfs.md)
                 * [257. Binary Tree Paths](257binary_tree_paths.md)
                 * [270. Closest Binary Search Tree Value](270closest_binary_search_tree_value.md)
         * [Dynamic Programming](dynamic_programming.md)
             * [276. Paint Fence](276paintfence.md)
             * [368.Largest Divisible Subset](368largest_divisible_subset.md)
             * [418. Sentence Screen Fitting \(Need Review\)](418sentence_screen_fitting.md)
-    * Eng\_Residency\_Program
+    * [Eng Residency Program](eng_residency_program.md)
         * [Maximum Sum with Constrains](maximum-sum-with-constrains.md)
 * [Note](note.md)
 
