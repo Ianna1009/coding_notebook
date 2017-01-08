@@ -4,7 +4,5 @@ This method shifts 1 over by i bits, creating a value that looks like 000100000.
 
 
 
-
-
-
+1111
 
