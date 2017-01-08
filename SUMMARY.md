@@ -6,6 +6,7 @@
 * [Dynamic Programming](Dynamic_Programming.md)
 * [Order\_Traversal](order_traversal.md)
 * [Detection Cycle in an Undirected Graph](detection_cycle_in_an_undirected_graph.md)
+* [Common Bit Tasks: Getting and Setting](common-bit-tasks-getting-and-setting.md)
 * [LeetCode Problems](leetcode_problems.md)
     * [Array\_and\_String](Array_and_String.md)
         * [\(Yahoo\)4. Median of Two Sorted Array](Leetcode Problems/Array and String/4. median_of_two_sorted_array.md)
@@ -218,5 +219,5 @@
             * [418. Sentence Screen Fitting \(Need Review\)](Interview Prep/LC GOOGLE/Dynamic Programming/418sentence_screen_fitting.md)
     * [Eng Residency Program](eng_residency_program.md)
         * [Maximum Sum with Constrains](Interview Prep/Eng Residency Program/maximum-sum-with-constrains.md)
-* [Note](note.md)
+* Common Bit Tasks: Getting and Setting
 
