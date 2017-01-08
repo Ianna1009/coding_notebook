@@ -6,6 +6,7 @@
 * [Dynamic Programming](Dynamic_Programming.md)
 * [Order\_Traversal](order_traversal.md)
 * [Detection Cycle in an Undirected Graph](detection_cycle_in_an_undirected_graph.md)
+* [Common Bit Tasks: Getting and Setting](common-bit-tasks-getting-and-setting.md)
 * [LeetCode Problems](leetcode_problems.md)
     * [Array\_and\_String](Array_and_String.md)
         * [\(Yahoo\)4. Median of Two Sorted Array](Leetcode Problems/Array and String/4. median_of_two_sorted_array.md)
@@ -19,6 +20,7 @@
         * [189. Rotated Array\(Not Finished\)](Leetcode Problems/Array and String/189. rotated_array.md)
         * [\(Yahoo\)217.Contains Duplicates](Leetcode Problems/Array and String/217. contains_duplicates.md)
         * [442. Find All Duplicates in an Array](Leetcode Problems/Array and String/442find_all_duplicates_in_an_array.md)
+        * [412. Fizz Buzz](412fizz-buzz.md)
     * [Tree](Tree.md)
         * [94. Binary Tree In-order Traversal](Leetcode Problems/Tree/94. binary_tree_in-order_traversal.md)
         * [\(Yahoo\)104. Maximum Depth of Binary Tree](Leetcode Problems/Tree/104. maximum_depth_of_binary_tree.md)
@@ -72,6 +74,7 @@
         * [338. Counting Bits](Leetcode Problems/Dynamic Programming/338counting_bits.md)
     * [Bit Manipulation](bit_manipulation.md)
         * [461.Hamming Distance](Leetcode Problems/Bit Manipulation/461hamming-distance.md)
+        * [371. Sum of Two Integers](371sum-of-two-integers.md)
     * [Design](design.md)
         * [\(Ya\/Go\)284. Peeking Iterator](Leetcode Problems/Desgin/284. peeking_iterator.md)
 * [Cracking Coding Interview](cracking_coding_interview.md)
@@ -216,5 +219,5 @@
             * [418. Sentence Screen Fitting \(Need Review\)](Interview Prep/LC GOOGLE/Dynamic Programming/418sentence_screen_fitting.md)
     * [Eng Residency Program](eng_residency_program.md)
         * [Maximum Sum with Constrains](Interview Prep/Eng Residency Program/maximum-sum-with-constrains.md)
-* [Note](note.md)
+* Common Bit Tasks: Getting and Setting
 
