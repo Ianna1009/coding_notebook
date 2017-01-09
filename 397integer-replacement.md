@@ -33,3 +33,25 @@ What is the minimum number of replacements needed for n to become 1?
 
 **Idea:**
 
+1. Even: >>1 can be used to divided by 2 
+2. Odd: choose results returned by min(n+1, n-1)
+3. After all, recursion is a good idea to do this problem
+
+**Solution:**
+
+    class Solution(object):
+        def integerReplacement(self, n):
+            """
+            :type n: int
+            :rtype: int
+            """
+            if n == 1:
+                return 0
+            return self.integerReplacement(n >> 1)+1 if not n % 2 else min(self.integerReplacement(n + 1), self.integerReplacement(n + 1)) + 1
+            
+**Note:**
+
+Even though it looks a bit ugly since it's mixed with bit operation and regular operation, but it's quite straightforward.
+
+
+
