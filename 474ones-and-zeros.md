@@ -35,6 +35,8 @@ This is a classic Knapsack Problem. Thinking about using dp:
             for y in range(n, one - 1, -1):
                 dp[x][y] = max(dp[x - zero][y - one] + 1, dp[x][y])
 
+where dp stands for the max number of strings using x zeros and y ones.
+
 **Solution:**
 
     class Solution(object):
@@ -52,6 +54,8 @@ This is a classic Knapsack Problem. Thinking about using dp:
                     for j in xrange(n, count1-1, -1):
                         dp[i][j] = max(dp[i-count0][j-count1]+1, dp[i][j])
             return dp[m][n]
+            
+Thanks for "[书影博客](http://bookshadow.com/weblog/2016/12/11/leetcode-ones-and-zeroes/)"
                 
         
 
