@@ -24,3 +24,5 @@ The size of given string array won't exceed 600.
     Output: 2
     
     Explanation: You could form "10", but then you'd have nothing left. Better form "0" and "1".
+    
+**Ideas:**
