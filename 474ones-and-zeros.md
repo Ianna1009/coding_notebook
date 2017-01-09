@@ -26,3 +26,33 @@ The size of given string array won't exceed 600.
     Explanation: You could form "10", but then you'd have nothing left. Better form "0" and "1".
     
 **Ideas:**
+
+This is a classic Knapsack Problem. Thinking about using dp:
+
+    for s in strs:
+        zero, one = s.count('0'), s.count('1')
+        for x in range(m, zero - 1, -1):
+            for y in range(n, one - 1, -1):
+                dp[x][y] = max(dp[x - zero][y - one] + 1, dp[x][y])
+
+**Solution:**
+
+    class Solution(object):
+        def findMaxForm(self, strs, m, n):
+            """
+            :type strs: List[str]
+            :type m: int
+            :type n: int
+            :rtype: int
+            """
+            dp = [[0 for _ in xrange(n+1)] for _ in xrange(m+1)]
+            for s in strs:
+                count0, count1 = s.count("0"), s.count("1")
+                for i in xrange(m, count0-1, -1):
+                    for j in xrange(n, count1-1, -1):
+                        dp[i][j] = max(dp[i-count0][j-count1]+1, dp[i][j])
+            return dp[m][n]
+                
+        
+
+
