@@ -42,3 +42,30 @@ When getting the smallest difference, we need to iterate two lists, the worst ca
 
 **Solution #2:**
 
+Refer to solution in the discussion:
+[https://discuss.leetcode.com/topic/22901/python-solution-o-n-time-o-1-space](https://discuss.leetcode.com/topic/22901/python-solution-o-n-time-o-1-space)
+    
+    class Solution(object):
+        def shortestDistance(self, words, word1, word2):
+            """
+            :type words: List[str]
+            :type word1: str
+            :type word2: str
+            :rtype: int
+            """
+            size = len(words)
+            index1, index2 = size, size
+            res = size
+            
+            for i in xrange(size):
+                if words[i] == word1:
+                    index1 = i
+                    res = min(res, abs(index1-index2))
+                elif words[i] == word2:
+                    index2 = i
+                    res = min(res, abs(index1-index2))
+            return res
+
+This will only take O(n) time and O(1) space.
+
+
