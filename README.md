@@ -219,6 +219,7 @@
             * [276. Paint Fence](Interview Prep/LC GOOGLE/Dynamic Programming/276paintfence.md)
             * [368.Largest Divisible Subset](Interview Prep/LC GOOGLE/Dynamic Programming/368largest_divisible_subset.md)
             * [418. Sentence Screen Fitting \(Need Review\)](Interview Prep/LC GOOGLE/Dynamic Programming/418sentence_screen_fitting.md)
+            * [474.Ones and Zeros](474ones-and-zeros.md)
     * [Eng Residency Program](eng_residency_program.md)
         * [Maximum Sum with Constrains](Interview Prep/Eng Residency Program/maximum-sum-with-constrains.md)
 * Common Bit Tasks: Getting and Setting

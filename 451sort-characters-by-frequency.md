@@ -51,3 +51,7 @@ Given a string, sort it in decreasing order based on the frequency of characters
             """
             char_count = collections.Counter(s)
             return "".join(ch * cont for ch, cont in char_count.most_common())
+            
+**Solution #2:**
+
+
