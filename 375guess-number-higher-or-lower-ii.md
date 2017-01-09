@@ -33,4 +33,4 @@ Given a particular n ≥ 1, find out how much money you need to have to guarante
 
 **Ideas:**
 
-Given hint #4, we can't solve it using Binary Search like 
+Given hint #4, we can't solve it using Binary Search like 374. Guess Number Higher or Lower
