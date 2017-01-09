@@ -33,4 +33,24 @@ Given a particular n ≥ 1, find out how much money you need to have to guarante
 
 **Ideas:**
 
-Given hint #4, we can't solve it using Binary Search like 374. Guess Number Higher or Lower
+Given hint #4, we can't solve it using Binary Search like [374. Guess Number Higher or Lower](https://github.com/Ianna1009/coding_notebook/blob/master/Interview%20Prep/LC%20GOOGLE/Binary%20Search/374guess_number_higher_or_lower.md), we need to find function for dynamic programming method.
+
+`dp[i][j]` is the minimum cost of guessing between i and j.
+
+**Solution:**
+
+    class Solution(object):
+        def getMoneyAmount(self, n):
+            """
+            :type n: int
+            :rtype: int
+            """
+            dp = [[0 for _ in xrange(n+1)] for _ in xrange(n+1)]
+            # dp[i][j] is the minimum cost when guessing between i and j
+            # Both i and j range from 1..n
+            for gap in xrange(1, n):
+                for low in xrange(1, n+1-gap):
+                    # low+gap < n+1
+                    high = low + gap
+                    dp[low][high] = min(x + max(dp[low][x-1], dp[x+1][high]) for x in xrange(low, high))
+            return dp[1][n]
