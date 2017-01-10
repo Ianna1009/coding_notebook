@@ -165,7 +165,7 @@
     * [LC GOOGLE](lc_google.md)
         * [Array](array.md)
             * [15.3 Sum](Interview Prep/LC GOOGLE/Array/153_sum.md)
-            * [163.Missing Ranges](163missing-ranges.md)
+            * [163. Missing Ranges](163missing-ranges.md)
             * [228. Summary Ranges](228-summary-ranges.md)
             * [259. 3Sum Smaller](2593sum-smaller.md)
             * [289. Game of Life \(2nd followup\)](Interview Prep/LC GOOGLE/Array/289game_of_life.md)
