@@ -59,6 +59,28 @@ Also note that we checked two time within and outside of `for` loop, which is un
             """
             left, n = 0, len(nums)
             res = []
+            for right in xrange(n):
+                if right + 1 < n and nums[right+1] == nums[right] + 1:
+                    right += 1
+                    continue
+                else: 
+                    val = str(nums[left])
+                    if right > left:
+                        val += "->" + str(nums[right])
+                    res.append(val)
+                    left = right + 1
+            return res
+            
+**Solution #3:** This referred to "[书影博客](http://bookshadow.com/weblog/2015/06/26/leetcode-summary-ranges/)"
+
+    class Solution(object):
+        def summaryRanges(self, nums):
+            """
+            :type nums: List[int]
+            :rtype: List[str]
+            """
+            left, n = 0, len(nums)
+            res = []
             while left < n:
                 org_left, val = left, str(nums[left])
                 while left + 1 < n and nums[left + 1] - nums[left] == 1:
