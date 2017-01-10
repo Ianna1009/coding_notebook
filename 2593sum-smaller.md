@@ -51,6 +51,30 @@ Could you solve it in O(n2) runtime?
                     else:
                         high -= 1
             return res
-                
+
+After cleaning it up, solution gets more clear:
+
+**Solution (clean):**
+
+    class Solution(object):
+        def threeSumSmaller(self, nums, target):
+            """
+            :type nums: List[int]
+            :type target: int
+            :rtype: int
+            """
+            cont, n = 0, len(nums)
+            nums.sort()
+            for i in xrange(n-2):
+                j, k = i+1, n-1
+                while j < k:
+                    if nums[j] + nums[k] + nums[i] < target:
+                        # Note that k-j possible solutions
+                        cont += k-j
+                        j += 1
+                    else:
+                        k -= 1
+            return cont
+                        
             
         
