@@ -200,6 +200,7 @@
         * [Design](design&Queue.md)
             * [Stack](stack.md)
                 * [155. Min Stack](Interview Prep/LC GOOGLE/Design/Stack/155min_stack.md)
+                * [341. Flatten Nested List Iterator](341flatten-nested-list-iterator.md)
             * [Queue](queue.md)
                 * [346. Moving Average from Data Stream](Interview Prep/LC GOOGLE/Design/Queue/346moving_average_from_data_stream.md)
             * [208. Implement Trie \(Prefix Tree\)](Interview Prep/LC GOOGLE/Design/208implement_trie_prefix_tree.md)
