@@ -169,6 +169,7 @@
             * [289. Game of Life \(2nd followup\)](Interview Prep/LC GOOGLE/Array/289game_of_life.md)
             * [448. Find All Numbers Disappeared in an Array](Interview Prep/LC GOOGLE/Array/448find_all_numbers_disappeared_in_an_array.md)
             * [370. Range Addition](370range-addition.md)
+            * [373. Find K pairs with Smallest Sums](373-find-k-pairs-with-smallest-sums.md)
         * [Hash Table](hash_table.md)
             * [246. Strobogrammatic Number](Interview Prep/LC GOOGLE/Hash Table/246strobogrammatic_number.md)
             * [249. Group Shifted Strings](Interview Prep/LC GOOGLE/Hash Table/249group_shifted_strings.md)
