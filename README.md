@@ -232,4 +232,6 @@
             * [309 Best Time to Buy and Sell Stocks with Cooldown](309-best-time-to-buy-and-sell-stocks-with-cooldown.md)
     * [Eng Residency Program](eng_residency_program.md)
         * [Maximum Sum with Constrains](Interview Prep/Eng Residency Program/maximum-sum-with-constrains.md)
+        * [Counting Number of 1 Bits in an Integer](number-of-1-bits-counting-1-bits-in-a-number-n.md)
+* [Note](note.md)
 
