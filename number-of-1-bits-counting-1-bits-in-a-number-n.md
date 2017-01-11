@@ -29,9 +29,9 @@ For example, the 32-bit integer ’11' has binary representation `00000000000000
             :rtype: int
             """
             cont = 0
-            for i in bin(n):
-                if i == '1':
-                    cont += 1
+            while n:
+                n &= n-1
+                cont += 1
             return cont
             
 ### Guess Version #2: LC338. Counting Bits

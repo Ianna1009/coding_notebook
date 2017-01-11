@@ -39,9 +39,9 @@ This is a classic dynamic programming problem. At the last state, either plus th
             # excl is the sum of not including number i, incl is the sum of including number i 
             excl, incl = 0, 0
             for i in xrange(n):
-                tmp = excl
-                incl = excl + nums[i]
-                excl = max(tmp, excl)
+                in, ex = incl, excl
+                incl = ex + nums[i]
+                excl = max(in, ex)
             return max(excl, incl)
             
 **Guess Version #2 With Negative Integers**
@@ -62,9 +62,9 @@ This is a classic dynamic programming problem. At the last state, either plus th
             for i in xrange(n):
                 if nums[i] >= 0:
                     isAllNegative = False
-                    tmp = excl
-                    incl = excl + nums[i]
-                    excl = max(tmp, excl)
+                    in, ex = incl, excl
+                    incl = ex + nums[i]
+                    excl = max(in, ex)
                 else:
                     excl = incl
                     if isAllNegative and nums[i] > allNegativeMax:
