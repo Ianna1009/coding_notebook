@@ -1,4 +1,4 @@
-## 298.Binary Tree Longest Consecutive Sequence
+## 298. Binary Tree Longest Consecutive Sequence
 
 Given a binary tree, find the length of the longest consecutive sequence path.
 
