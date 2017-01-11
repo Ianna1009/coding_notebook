@@ -29,11 +29,11 @@ Given a list of non-negative integers representing the amount of money of each h
         n = len(nums)
         if n <= 1:
             return 0 if n == 0 else nums[0]
-        a = 0
-        b = 0
-        for i in xrange(n):
-            tmp = a
-            a = b + nums[i]
-            b = max(tmp, b)
-        return max(a, b)
+        excl, incl = 0, 0
+        for j in xrange(len(nums)):
+            i = incl
+            e = excl
+            incl = e + nums[j]
+            excl = max(i, e)
+        return max(excl, incl)
 
