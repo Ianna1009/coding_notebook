@@ -56,7 +56,7 @@ class Solution(object):
 
 In the Bit solution,  ^ can't be used between two unicodes, or strings directly in Python, so:
 
- unicode -> bin, use `ord`
+ unicode -> bin**, use `ord`
 
  bin - unicode, use `chr`
 
