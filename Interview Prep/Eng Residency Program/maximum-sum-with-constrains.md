@@ -8,7 +8,7 @@ Given an array of non-negative integers, determine the maximum sum of a subseque
 
 This is a classic dynamic programming problem. At the last state, either plus the last number or not, i.e. take max(dp[i-1], dp[i-2]+array[i])
 
-**Solution:** 
+**Solution: O(n) time, O(n) Space** 
 
     class Solution(object):
         def rob(self, nums):
@@ -19,14 +19,13 @@ This is a classic dynamic programming problem. At the last state, either plus th
             n = len(nums)
             if n < 1:
                 return 0
-            res = 0
             dp = [0] * (n+1)
             dp[1] = nums[0]
             for i in xrange(1, n):
                 dp[i+1] = max(dp[i-1]+nums[i], dp[i])
             return dp[-1]
             
-**Solution with Memorization:**
+**Solution with Memorization: O(n) time, O(1) Space**
 
     class Solution(object):
         def rob(self, nums):
@@ -37,12 +36,43 @@ This is a classic dynamic programming problem. At the last state, either plus th
             n = len(nums)
             if n == 0:
                 return 0
-            # a is the sum of not including number i, b is the sum of including number i 
-            a, b = 0, nums[0]
-            for i in xrange(1, n):
-                tmp = b
-                b = a + nums[i]
-                a = max(tmp, a)
-            return max(a, b)
+            # excl is the sum of not including number i, incl is the sum of including number i 
+            excl, incl = 0, 0
+            for i in xrange(n):
+                tmp = excl
+                incl = excl + nums[i]
+                excl = max(tmp, excl)
+            return max(excl, incl)
+            
+**Guess Version #2 With Negative Integers**
+
+    class Solution(object):
+        def rob(self, nums):
+            """
+            :type nums: List[int]
+            :rtype: int
+            """
+            n = len(nums)
+            if n == 0:
+                return 0
+            isAllNegative = True
+            allNegativeMax = -float('inf')
+            # excl is the sum of not including number i, incl is the sum of including number i 
+            excl, incl = 0, 0
+            for i in xrange(n):
+                if nums[i] >= 0:
+                    isAllNegative = False
+                    tmp = incl
+                    incl = max(excl + nums[i], incl)
+                    excl = tmp
+                else:
+                    excl = incl
+                    if isAllNegative and nums[i] > allNegativeMax:
+                        allNegativeMax = nums[i]
+                    
+            return max(excl, incl) if not isAllNegative else allNegativeMax
+
+
+
 
 
