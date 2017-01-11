@@ -40,6 +40,7 @@ Longest consecutive sequence path is 2-3,not 3-2-1, so return 2.
         :rtype: int
         """
         res = [0]
+        ## Be careful: prev of root in -inf, and count initialized to be 1
         self.trav(root, -float('inf'), res, 1)
         return res[0]
     
@@ -48,6 +49,7 @@ Longest consecutive sequence path is 2-3,not 3-2-1, so return 2.
             return 
         if root.val == prev+1:
             tmp_count += 1
+        ## Be careful: if not consecutive any more, tmp_count should be reset
         else:
             tmp_count = 1
         res[0] = max(res[0], tmp_count)
