@@ -52,8 +52,8 @@ Longest consecutive sequence path is 2-3,not 3-2-1, so return 2.
         ## Be careful: if not consecutive any more, tmp_count should be reset
         else:
             tmp_count = 1
+        ## Be careful: every time before moving forward, update res[0]
         res[0] = max(res[0], tmp_count)
-        prev = root.val
-        self.trav(root.left, prev, res, tmp_count)
-        self.trav(root.right, prev, res, tmp_count)
+        self.trav(root.left, root.val, res, tmp_count)
+        self.trav(root.right, root.val, res, tmp_count)
         
