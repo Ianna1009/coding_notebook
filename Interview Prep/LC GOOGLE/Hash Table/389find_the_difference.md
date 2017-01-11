@@ -8,27 +8,57 @@ Find the letter that was added in t.
 
 **Example:**
 
-    Input:
-    s = "abcd"
-    t = "abcde"
+```
+Input:
+s = "abcd"
+t = "abcde"
 
-    Output:
-    e
+Output:
+e
 
-    Explanation:
-    'e' is the letter that was added.
+Explanation:
+'e' is the letter that was added.
+```
 
-**Solution #1: (Hash table)**
+**Solution \#1: \(Hash table\)**
 
+```
+def findTheDifference(self, s, t):
+    cont_s = collections.Counter(s)
+    for i in t:
+        if i not in cont_s:
+            return i
+        cont_s[i] -= 1
+        if cont_s[i] < 0:
+            return i
+    return None
+```
+
+**Solution \#2: \(Bit\)**
+
+```
+class Solution(object):
     def findTheDifference(self, s, t):
-        cont_s = collections.Counter(s)
-        for i in t:
-            if i not in cont_s:
-                return i
-            cont_s[i] -= 1
-            if cont_s[i] < 0:
-                return i
-        return None
+        """
+        :type s: str
+        :type t: str
+        :rtype: str
+        """
+        res = 0
+        for c in s:
+            res ^= ord(c)
+        for c in t:
+            res ^= ord(c)
+        return chr(res)
+```
 
-**Solution #2: (Bit)**
-        
+**Notes:**
+
+In the Bit solution,  ^ can't be used between two unicodes, or strings directly in Python, so:
+
+ unicode -> bin, use `ord`
+
+ bin - unicode, use `chr`
+
+
+
