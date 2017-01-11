@@ -48,4 +48,34 @@ You can assume that no duplicate edges will appear in edges. Since all edges are
         return cont
                             
 **Solution #2 **
+
+    class Solution(object):
+        def countComponents(self, n, edges):
+            """
+            :type n: int
+            :type edges: List[List[int]]
+            :rtype: int
+            """
+            # Construct Graph:
+            graph = {i: [] for i in xrange(n)}
+            for x, y in edges:
+                graph[x].append(y)
+                graph[y].append(x)
+            
+            cont = 0 
+            visited = set()
+            for i in graph:
+                if i not in visited:
+                    cont += 1
+                    self.dfs(graph, visited, i)
+            return cont
+                
+        def dfs(self, graph, visited, i):
+            if i in visited:
+                return 
+            visited.add(i)
+            for node in graph[i]:
+                self.dfs(graph, visited, node)
+            
+        
         
