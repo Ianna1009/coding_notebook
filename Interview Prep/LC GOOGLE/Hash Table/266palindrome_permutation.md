@@ -26,5 +26,23 @@ Given a string, determine if a permutation of the string could form a palindrome
             return False
         return True
         
+**Solution #2:**
+
+    class Solution(object):
+        def canPermutePalindrome(self, s):
+            """
+            :type s: str
+            :rtype: bool
+            """
+            cont = collections.Counter(s)
+            odd = 0
+            for ch in cont:
+                if cont[ch] % 2:
+                    if odd == 0:
+                        odd += 1
+                    else:
+                        return False
+            return True
+        
 
             
