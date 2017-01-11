@@ -62,9 +62,9 @@ This is a classic dynamic programming problem. At the last state, either plus th
             for i in xrange(n):
                 if nums[i] >= 0:
                     isAllNegative = False
-                    tmp = incl
-                    incl = max(excl + nums[i], incl)
-                    excl = tmp
+                    tmp = excl
+                    incl = excl + nums[i]
+                    excl = max(tmp, excl)
                 else:
                     excl = incl
                     if isAllNegative and nums[i] > allNegativeMax:
