@@ -28,4 +28,21 @@ This is a classic dynamic programming problem. At the last state, either plus th
             
 **Solution with Memorization:**
 
+    class Solution(object):
+        def rob(self, nums):
+            """
+            :type nums: List[int]
+            :rtype: int
+            """
+            n = len(nums)
+            if n == 0:
+                return 0
+            # a is the sum of not including number i, b is the sum of including number i 
+            a, b = 0, nums[0]
+            for i in xrange(1, n):
+                tmp = b
+                b = a + nums[i]
+                a = max(tmp, a)
+            return max(a, b)
+
 
