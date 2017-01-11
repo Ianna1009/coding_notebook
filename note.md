@@ -41,10 +41,10 @@ Some notes need to remember:
 
 4. n & (n-1): drops the lowest set bit.
 
-    For example: n = 00101100
-    1) n = 00101100, then n-1 = 00101011, so n & (n-1) = 00101000. Count = 1
-    2) n = 00101000, then n-1 = 00100111, so n & (n-1) = 00100000. Count = 2
-    3) n = 00100000, then n-1 = 00011111, so n & (n-1) = 00000000. Count = 3
+        For example: n = 00101100
+        1) n = 00101100, then n-1 = 00101011, so n & (n-1) = 00101000. Count = 1
+        2) n = 00101000, then n-1 = 00100111, so n & (n-1) = 00100000. Count = 2
+        3) n = 00100000, then n-1 = 00011111, so n & (n-1) = 00000000. Count = 3
 
     This way, we can count 1s in a number
     
